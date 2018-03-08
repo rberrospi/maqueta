@@ -1,0 +1,103 @@
+/*For Menu Style*/
+
+.nav-header {
+    border-color: transparent;
+    border-radius: 0;
+    background-color: $primary-color;
+    font-family: $third-font;
+    letter-spacing: 1.1pt;
+    color: $text-color-light;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    .nav-wrapper {
+        .row {
+            .nav-logo {
+                color: $text-color-light;
+                border-right: $border-color-grey solid 0.5pt;
+                min-height: 130px;
+                margin-bottom: 0px;
+                vertical-align: center;
+                .brand {
+                    padding-left: 10vh;
+                    img {
+                        margin-top: 2vh;
+                    }
+                }
+            }
+            .nav-right-menu {
+                .row {
+                    color: $text-color-light;
+                    border-bottom: $border-color-grey solid 0.5pt;
+                    .top-header {
+                        font-size: 12px;
+                        .left-options,
+                        .right-options {
+                            margin-bottom: 15px;
+                            margin-top: 10px;
+                            a {
+                                color: $text-color-light;
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                        .left-options {
+                            float: left;
+                            margin-left: 30px;
+                        }
+                        .right-options {
+                            float: right;
+                            margin-right: 40px;
+                        }
+                    }
+                    .bottom-header {
+                        min-height: 59px;
+                        vertical-align: center;
+                        margin-right: 0px;
+                        nav {
+                            float: left;
+                            margin-left: 0px;
+                            padding-top: 19px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: $primary-color;
+    margin-bottom: 0px;
+    font-family: "Raleway";
+    letter-spacing: 1.1pt;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: $text-color-light;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $text-color-light;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li a :hover {
+    color: $text-color-grey;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: $text-color-light;
+    background-color: transparent;
+}

@@ -1,0 +1,55 @@
+/* Background Colors */
+
+$primary-color:#002664;
+$secondary-color:#7fba00;
+
+/* Colors Pallette */
+
+$primary-title: #00215A; // Title / Accent
+$primary-links: #3480DE; // Links / Buttons / Accent
+$secondary-generic: #3480DE;
+$secondary-train: #00A2DD;
+$secondary-youth: #FF5B35;
+$secondary-involved: #79bb30;
+$secondary-events: #FF9E30;
+$secondary-special-events: #f4364c;
+$secondary-community: #93395b;
+$text-color-dark: #191919;
+$text-color-grey: #999;
+$text-color-light: #fff;
+$border-color-grey: #b9b9b97d;
+$bg-color-grey: #F2F2F2; // Background
+$bg-color-form: #d9d9d9;
+$icon-color: #b2b2b2;
+$line-color: #e5e5e5; // Stroke / line
+
+/* Font Sizes */
+
+$font-10: 10px;
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-24: 24px;
+$font-34: 34px;
+
+/* Font Weights */
+
+$font-x-light: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-x-bold: 800;
+$font-black: 900;
+
+/* Font*/
+
+$primary-font: 'Glegoo';
+$secondary-font: 'GothamBook';
+$third-font: 'Raleway';
+$base-font-size: $font-14;
+$base-font-family: $primary-font,
+sans-serif;
+$base-font-color: $text-color-grey;

@@ -1,0 +1,71 @@
+ /*For Footer Menu Section*/
+
+ .footer-menu {
+     background: url(../images/bg-footer.jpg) repeat top left;
+     color: #000;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     -ms-background-size: cover; // background-size: 30vw;
+     padding: 9vh 0px;
+     color: $text-color-light;
+     border-bottom: 1px solid #cfcdcd;
+     font-size: $font-14;
+     .container {
+         .row {
+             margin-bottom: 30px;
+             .menu-item {
+                 margin-bottom: 20px;
+                 h5 {
+                     font-size: 16px;
+                     font-family: $third-font;
+                     font-weight: 400;
+                 }
+                 p {
+                     font-size: $font-14;
+                 }
+                 ul {
+                     li {
+                         font-size: 13px;
+                         text-transform: uppercase;
+                         font-family: $third-font;
+                         margin-bottom: 10px;
+                         font-weight: 300;
+                     }
+                 }
+             }
+         }
+         .brand-logo {
+             margin-left: 10px;
+         }
+     }
+ }
+
+ .footer-wrapper {
+     display: block;
+ }
+
+ .contact_socail_bookmark {
+     margin-left: -15px;
+     margin-top: 20px;
+     a {
+         margin-left: 15px;
+         transition: .5s;
+         i {
+             color: $text-color-light;
+             border: 1px solid$text-color-light;
+             width: 40px;
+             height: 40px;
+             line-height: 40px;
+             text-align: center;
+             border-radius: 50%;
+         }
+     }
+     a:hover {
+         i {
+             color: $secondary-generic;
+             border: 1px solid $secondary-generic;
+         }
+     }
+ }

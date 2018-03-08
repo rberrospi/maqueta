@@ -1,0 +1,284 @@
+
+html,
+body {
+    //font-size: $base-font-size;
+    // color: $text-color-grey;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: $base-font-family;
+    font-weight: $font-light;
+}
+
+html {
+    @include fontSize(16px);
+    font-family: $secondary-font;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: $font-light;
+    font-family: $primary-font;
+    margin: 0;
+    color: $text-color-dark;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: $font-light;
+    font-family: $secondary-font;
+    margin: 0;
+    line-height: 2rem;
+}
+
+h1 {
+    @include fontSize(32px);
+    line-height: 3rem;
+    font-weight: $font-bold;
+}
+
+h2 {
+    @include fontSize(24px);
+    line-height: 2rem;
+    margin-bottom: .9rem;
+    font-weight: $font-bold;
+}
+
+h3 {
+    @include fontSize(20px);
+    font-weight: $font-light;
+    margin-bottom: .9rem;
+    line-height: 2.5rem;
+}
+
+h4 {
+    //font-size: 1.6rem;
+    @include fontSize(18px);
+    line-height: 2.2rem;
+    margin-bottom: 1.1rem;
+}
+
+h5 {
+    //font-size: 1.3rem;
+    @include fontSize(16px);
+    margin-bottom: 1rem;
+}
+
+h6 {
+    //font-size: 1rem;
+    @include fontSize(13px);
+    margin-bottom: .9rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    margin: 0 0 15px;
+    @include fontSize(14px);
+    font-family: $secondary-font;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+.small-text {
+    font-family: $secondary-font;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button,
+a span {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn.extra-width {
+    padding: 13px 40px;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    direction: rtl;*/
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-thumb-container {
+    cursor: pointer;
+}
+
+
+/* Inputs */
+
+input,
+input:hover,
+input:visited,
+input:focus {
+    outline: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+.input-primary {
+    border: 1px solid #c8c8c8;
+    background: transparent;
+    max-width: 400px;
+    margin-top: 15px;
+    @include border-radius(25px);
+}
+
+.form-control {
+    // border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: $text-color-grey;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle; //  float: left;
+}
+
+ul#horizontal-list {
+    min-width: 200px;
+    list-style: none; // padding-top: 20px;
+    margin-left: 15px;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    margin-left: 15px;
+}
+
+
+/*scollup icon*/
+
+.scrollup {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 10;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup:hover {
+    background: $primary-color;
+    opacity: 1;
+}
+
+.scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+}
+
+.container-img {
+    color: #000;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    color: $text-color-light;
+    font-family: $secondary-font;
+    cursor: pointer;
+    h6,
+    span {
+        color: $text-color-light;
+        margin-bottom: 0.1rem;
+    }
+    padding: 0px;
+    .overlay-fluid-block {
+        background-color: rgba(0, 0, 0, 0.15);
+        &:hover {
+            background-color: transparent;
+        }
+        .content-wrapper {
+            height: 60vh;
+            width: 45vh;
+            overflow: hidden;
+            .left-bottom-content {
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                padding: 3vh 5vh 4vh;
+                text-align: left;
+            }
+            .left-top-content {
+                left: 0;
+                top: 0;
+                .title {
+                    background-color: $secondary-youth;
+                    font-size: $font-12;
+                    padding: 8px 14px;
+                    color: $text-color-light;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+.no-padding {
+    padding: 0 !important;
+}

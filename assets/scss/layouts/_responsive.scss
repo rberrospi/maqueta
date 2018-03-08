@@ -1,0 +1,224 @@
+
+/* Large screens */
+@media (min-width: 1441px) and (max-width: 1920px) { 
+    .container-img {
+        .overlay-fluid-block {
+            background-color: transparent; 
+            .content-wrapper {
+                height: 35vh
+            }
+        }
+    }
+}
+
+@media (min-width: 1225x) and (max-width: 1440px) { 
+    .container-img {
+        .overlay-fluid-block {
+            background-color: transparent; 
+            .content-wrapper {
+                height: 43vh; 
+            }
+        }
+    }
+}
+
+/* Desktops and laptops */
+
+@media (min-width: 992px) and (max-width: 1224px) {
+    .nav-header {
+        .nav-wrapper {
+            .row {
+                .nav-logo {
+                    .brand {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .home {
+        background-size: 99vw;
+        padding: 14vh 0px;
+    }
+    .container-img {
+        .overlay-fluid-block {
+            background-color: transparent;
+        }
+    }
+    .contact {
+        .container {
+            form {
+                button,
+                input {
+                    margin-left: 0;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (max-width: 991px) {
+    .container-img {
+        background-position-x: left;
+        background-position-y: top;
+        margin-left: 20vh;
+        margin-bottom: 40px;
+        .overlay-fluid-block {
+            background-color: transparent;
+        }
+        .left-bottom-content {
+            margin-left: 20vh;
+        }
+    }
+    .sections {
+        .container {
+            .section-card {
+                margin-bottom: 30px;
+            }
+            .section-header {
+                h1 {
+                    width: 100%;
+                    margin-left: 15px;
+                }
+                a {
+                    margin-right: 20px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+    .contact {
+        .container {
+            form {
+                button,
+                input {
+                    margin-left: 0;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .home {
+        background-size: 135vw;
+        padding: 9vh 0px;
+    }
+    .sections {
+        .container {
+            .section-card {
+                margin-bottom: 30px;
+            }
+            .section-header {
+                h1 {
+                    width: 100%;
+                    margin-left: 15px;
+                }
+                a {
+                    margin-right: 20px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+    .container-img {
+        background-position-x: left;
+        background-position-y: top;
+        margin-left: 20vh;
+        margin-bottom: 40px;
+        .overlay-fluid-block {
+            background-color: transparent;
+        }
+        .left-bottom-content {
+            margin-left: 20vh;
+        }
+    }
+    .contact {
+        .container {
+            h1 {
+                margin-top: 50px;
+            }
+            form {
+                margin-top: 30px;
+                button,
+                input {
+                    margin-left: 0;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {
+    .home {
+        padding: 7vh 0px;
+    }
+    .sections {
+        .container {
+            margin-bottom: 0px;
+            hr {
+                margin-top: 0px;
+            }
+            .section-card {
+                margin-bottom: 50px;
+            }
+            .section-header {
+                h1 {
+                    width: 100%;
+                    margin-left: 15px;
+                }
+                a {
+                    margin-right: 20px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+    .container-img {
+        background-position-x: left;
+        background-position-y: top;
+        margin-left: 40px;
+        .overlay-fluid-block {
+            background-color: transparent;
+        }
+        .left-bottom-content {
+            margin-left: 40px;
+        }
+    }
+    .contact {
+        .container {
+            h1 {
+                margin-top: 50px;
+            }
+            form {
+                margin-top: 30px;
+                button,
+                input {
+                    margin-left: 0;
+                    width: 100%
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    h2 {
+        line-height: 3rem;
+    }
+    .content-wrapper {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+//Using command line to compile scss files to main.css >  sass --watch scss:css
+
+/* BASE - Base styles, variables, mixins, etc */
+
+@import 'base/_fonts.scss';
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+
+/* MODULES - Individual site components */
+
+@import 'modules/_buttons.scss';
+@import 'modules/_video.scss';
+@import 'modules/_nav.scss';
+
+/* LAYOUTS - Page layout styles */
+
+@import 'layouts/_sections.scss'; 
+@import 'layouts/_footer.scss';
+@import 'layouts/_responsive.scss';

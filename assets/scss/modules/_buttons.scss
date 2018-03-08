@@ -1,0 +1,66 @@
+.btn {
+    padding: 1em 2.5em;
+    border-radius: 25px;
+    font-size: 1em;
+    border: 1px solid $primary-links;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: $secondary-font;
+    &:hover {
+        border-color: $primary-color;
+    }
+}
+
+.btn-primary {
+    background-color: $primary-links;
+    color: $text-color-light;
+    &:hover {
+        background-color: $primary-color;
+        color: $line-color;
+        border-color: $primary-color;
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: $primary-links;
+    border-color: $text-color-grey;
+    &:hover {
+        color: $primary-links;
+        border-color: $primary-links;
+    }
+}
+
+.btn-link {
+    font-weight: $font-regular;
+    font-size: 1em;
+    text-decoration: transparent;
+    font-family: $secondary-font;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: $secondary-font;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn-link-primary {
+    @extend .btn-link;
+    color: $secondary-generic;
+    &:hover {
+        color: $secondary-generic;
+    }
+}
+
+.btn-link-secondary {
+    @extend .btn-link;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: $secondary-generic;
+    &:hover {
+        text-decoration: underline;
+        color: $primary-links;
+        text-decoration-color: $primary-links;
+    }
+}

@@ -1,0 +1,222 @@
+/* Common section setting */
+
+.sections {
+    .container {
+        .section-header {
+            h1 {
+                float: left;
+            }
+            a {
+                float: right;
+                font-size: $font-12;
+            }
+            margin-bottom: 50px;
+        }
+        hr {
+            margin-top: 60px;
+        }
+        margin-bottom: 40px;
+    }
+}
+
+.section-title {
+    color: $primary-title;
+    font-weight: $font-bold;
+}
+
+.section-legend {
+    color: $primary-color;
+    font-weight: 700;
+    font-family: $secondary-font;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/*For Home Section*/
+
+.home {
+    background: url(../images/homebg.jpg) no-repeat top left;
+    color: #000;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100vw;
+    padding: 19vh 0px;
+}
+
+
+/* welcome  section */
+
+.single-welcome-right {
+    .video-wrapper {
+        margin-top: 60px;
+    }
+}
+
+.single-welcome-left {
+    margin-top: 10%;
+    p {
+        width: 80%;
+    }
+}
+
+
+/* Story section */
+
+.stories {
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Events section */
+
+.events {
+    img {
+        max-height: 384px;
+    }
+}
+
+.event-img-1 {
+    background: url(../images/event-1.png) no-repeat center center;
+}
+
+.event-img-2 {
+    background: url(../images/event-2.png) no-repeat center center;
+}
+
+.event-img-3 {
+    background: url(../images/event-3.png) no-repeat center center;
+}
+
+.event-img-4 {
+    background: url(../images/event-4.png) no-repeat center center;
+}
+
+@media (max-width: 767px) {
+    
+    .events {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            height: 92vh;
+            white-space: nowrap;
+            .section-card {
+                max-height: 60vh; 
+                display:inline-block;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/
+            }
+        }
+    }
+}
+
+
+/* Resource section */
+
+.resources {
+    min-height: 75vh;
+    .video-resource {
+        video {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .resources {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            height: 105vh;
+            white-space: nowrap;
+            .section-card {
+                max-width: 320px;
+                max-height: 60vh; 
+                display:inline-block;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/ 
+                .content-card { 
+                    p {
+                        white-space: normal;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+
+/* Youth training Section */
+
+.training {
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .container {
+        .row {
+            .section-card {
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+        }
+        .section-button {
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+    }
+} 
+
+
+/* Photo Stories section */
+
+.photo-stories {
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .container {
+        .row {
+            .section-card {
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+            margin-top: 40px;
+        }
+    }
+}
+
+
+/* Contact Section */
+
+.contact {
+    background-color: $secondary-train;
+    min-height: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    .container {
+        form {
+            input {
+                float: left;
+                margin-right: 20px;
+                margin-left: 40px;
+                color: $text-color-light
+            }
+            input[type="email"]::-webkit-input-placeholder {
+                color: $text-color-light;
+            }
+        }
+    }
+    h1 {
+        color: $text-color-light;
+    }
+}
