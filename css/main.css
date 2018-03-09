@@ -539,52 +539,13 @@ ul#horizontal-list li {
       /*max-width: 320px;*/
       max-height: 60vh;
       display: inline-block;
-      vertical-align: top;
       *display: inline;
       /* For IE7*/
       *zoom: 1;
       /* For IE7*/ }
       .training .container .section-card .content-card p {
-        white-space: normal; }
-
-  .nc {
-    display: none !important; } }
-/* Sponsor Section */
-@media (max-width: 767px) {
-  .sponsor .container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap; }
-    .sponsor .container .section-card {
-      /*max-width: 320px;*/
-      max-height: 60vh;
-      display: inline-block;
-      vertical-align: top;
-      *display: inline;
-      /* For IE7*/
-      *zoom: 1;
-      /* For IE7*/ }
-      .sponsor .container .section-card .content-card p {
         white-space: normal; } }
 /* Photo Stories section */
-@media (max-width: 767px) {
-  .photo-stories .container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap; }
-    .photo-stories .container .section-card {
-      width: 100%;
-      /*max-width: 320px;*/
-      max-height: 60vh;
-      display: inline-block;
-      vertical-align: top;
-      *display: inline;
-      /* For IE7*/
-      *zoom: 1;
-      /* For IE7*/ }
-      .photo-stories .container .section-card p {
-        white-space: normal;
-        width: 100%; } }
 .photo-stories h2 {
   margin-top: 20px;
   margin-bottom: 5px; }

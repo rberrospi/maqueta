@@ -173,10 +173,96 @@
             margin-bottom: 10px;
         }
     }
-} 
+}
+
+
+@media (max-width: 767px) {
+    
+    .training {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            height: 105vh;
+            white-space: nowrap;
+            .section-card {
+                /*max-width: 320px;*/
+                max-height: 60vh; 
+                display:inline-block;
+                vertical-align : top;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/ 
+                .content-card { 
+                    p {
+                        white-space: normal;
+                    }
+                } 
+            }
+        }
+    }
+
+    .nc {
+        display:none!important;
+    }
+
+
+}
+
+/* Sponsor Section */
+
+
+@media (max-width: 767px) {
+    
+    .sponsor {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            .section-card {
+                /*max-width: 320px;*/
+                max-height: 60vh; 
+                display:inline-block;
+                vertical-align : top;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/ 
+                .content-card { 
+                    p {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 /* Photo Stories section */
+
+@media (max-width: 767px) {
+    
+    .photo-stories {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            .section-card {
+                width: 100%;
+                /*max-width: 320px;*/
+                max-height: 60vh; 
+                display:inline-block;
+                vertical-align : top;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/ 
+                 
+                p {
+                    white-space: normal;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 
 .photo-stories {
     h2 {
