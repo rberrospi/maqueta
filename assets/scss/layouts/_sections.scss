@@ -60,6 +60,7 @@
     margin-top: 10%;
     p {
         width: 80%;
+        text-align: justify;
     }
 }
 
@@ -67,6 +68,7 @@
     .single-welcome-left {
         p {
         width: 100%;
+        text-align: justify;
         }
     }
  
@@ -91,16 +93,21 @@
             white-space: nowrap;
             p {
                 width:100%;
+                text-align: justify;
             }
             .section-card {
                 max-width: 85%;
                 max-height: 60vh; 
                 display:inline-block;
                 *display:inline;/* For IE7*/
-                *zoom:1;/* For IE7*/ 
+                *zoom:1;/* For IE7*/               
+                overflow: hidden;
+                white-space: normal;
+                vertical-align: top;
                 .content-card { 
                     p {
                         white-space: normal;
+                        text-align: justify;
                     }
                 } 
             }
@@ -170,7 +177,7 @@
         .container {
             overflow-x: scroll;
             overflow-y: hidden;
-            height: 105vh;
+            height: 90vh;
             white-space: nowrap;
             .section-card {
                 max-width: 320px;
@@ -181,6 +188,7 @@
                 .content-card { 
                     p {
                         white-space: normal;
+                        text-align: justify;
                     }
                 } 
             }
@@ -202,12 +210,16 @@
                 margin-top: 20px;
                 margin-bottom: 5px;
             }
+            div:nth-child(3){ 
+                float: right;
+                padding-top: 20px;
+            }
         }
         .section-button {
-            margin-top: 60px;
             margin-bottom: 10px;
-        }
+        } 
     }
+
 }
 
 
@@ -217,11 +229,12 @@
         .container {
             overflow-x: scroll;
             overflow-y: hidden;
-            height: 105vh;
+            height: 100%;
             white-space: nowrap;
             .section-card {
-                /*max-width: 320px;*/
-                max-height: 60vh; 
+                max-width: 80%;
+                overflow: hidden;
+                white-space: normal;
                 display:inline-block;
                 vertical-align : top;
                 *display:inline;/* For IE7*/
@@ -229,8 +242,30 @@
                 .content-card { 
                     p {
                         white-space: normal;
+                        text-align: justify;
                     }
                 } 
+            }
+            div:nth-child(3){ 
+                float: inherit!important;
+                padding-top: 0px!important;
+            }
+
+            #more-cards
+                .section-card{
+                    max-width: 80%;
+                    overflow: hidden;
+                    white-space: normal;
+                    display:inline-block;
+                    vertical-align : top;
+                    *display:inline;/* For IE7*/
+                    *zoom:1;/* For IE7*/ 
+                    .content-card { 
+                        p {
+                            white-space: normal;
+                            text-align: justify
+                        }
+                }
             }
         }
     }
@@ -275,9 +310,12 @@
             overflow-y: hidden;
             white-space: nowrap;
             .section-card {
-                width: 100%;
+                width: 80%;
+                overflow: hidden;
+                white-space: normal;
+                text-align: justify;
                 /*max-width: 320px;*/
-                max-height: 60vh; 
+                max-height: 110vh; 
                 display:inline-block;
                 vertical-align : top;
                 *display:inline;/* For IE7*/
@@ -287,6 +325,10 @@
                     white-space: normal;
                     width: 100%;
                 }
+            }
+        div:nth-child(4){ 
+            float: inherit!important;
+            padding-top: 0px!important;
             }
         }
     }
@@ -306,6 +348,10 @@
             }
             margin-top: 40px;
         }
+    }
+    div:nth-child(4){ 
+        float: right;
+        padding-top: 32px;
     }
 }
 

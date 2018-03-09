@@ -459,11 +459,13 @@ ul#horizontal-list li {
 .single-welcome-left {
   margin-top: 10%; }
   .single-welcome-left p {
-    width: 80%; }
+    width: 80%;
+    text-align: justify; }
 
 @media (max-width: 767px) {
   .single-welcome-left p {
-    width: 100%; } }
+    width: 100%;
+    text-align: justify; } }
 /* Story section */
 .stories h2 {
   margin-top: 20px;
@@ -475,7 +477,8 @@ ul#horizontal-list li {
     overflow-y: hidden;
     white-space: nowrap; }
     .stories .container p {
-      width: 100%; }
+      width: 100%;
+      text-align: justify; }
     .stories .container .section-card {
       max-width: 85%;
       max-height: 60vh;
@@ -483,9 +486,13 @@ ul#horizontal-list li {
       *display: inline;
       /* For IE7*/
       *zoom: 1;
-      /* For IE7*/ }
+      /* For IE7*/
+      overflow: hidden;
+      white-space: normal;
+      vertical-align: top; }
       .stories .container .section-card .content-card p {
-        white-space: normal; } }
+        white-space: normal;
+        text-align: justify; } }
 /* Events section */
 .events img {
   max-height: 384px; }
@@ -526,7 +533,7 @@ ul#horizontal-list li {
   .resources .container {
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 105vh;
+    height: 90vh;
     white-space: nowrap; }
     .resources .container .section-card {
       max-width: 320px;
@@ -537,7 +544,8 @@ ul#horizontal-list li {
       *zoom: 1;
       /* For IE7*/ }
       .resources .container .section-card .content-card p {
-        white-space: normal; } }
+        white-space: normal;
+        text-align: justify; } }
 /* Youth training Section */
 .training h2 {
   margin-top: 20px;
@@ -545,19 +553,22 @@ ul#horizontal-list li {
 .training .container .row .section-card {
   margin-top: 20px;
   margin-bottom: 5px; }
+.training .container .row div:nth-child(3) {
+  float: right;
+  padding-top: 20px; }
 .training .container .section-button {
-  margin-top: 60px;
   margin-bottom: 10px; }
 
 @media (max-width: 767px) {
   .training .container {
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 105vh;
+    height: 100%;
     white-space: nowrap; }
     .training .container .section-card {
-      /*max-width: 320px;*/
-      max-height: 60vh;
+      max-width: 80%;
+      overflow: hidden;
+      white-space: normal;
       display: inline-block;
       vertical-align: top;
       *display: inline;
@@ -565,7 +576,26 @@ ul#horizontal-list li {
       *zoom: 1;
       /* For IE7*/ }
       .training .container .section-card .content-card p {
-        white-space: normal; } }
+        white-space: normal;
+        text-align: justify; }
+    .training .container div:nth-child(3) {
+      float: inherit !important;
+      padding-top: 0px !important; }
+    .training .container #more-cards
+    .section-card {
+      max-width: 80%;
+      overflow: hidden;
+      white-space: normal;
+      display: inline-block;
+      vertical-align: top;
+      *display: inline;
+      /* For IE7*/
+      *zoom: 1;
+      /* For IE7*/ }
+      .training .container #more-cards
+      .section-card .content-card p {
+        white-space: normal;
+        text-align: justify; } }
 /* Sponsor Section */
 @media (max-width: 767px) {
   .sponsor .container {
@@ -590,9 +620,12 @@ ul#horizontal-list li {
     overflow-y: hidden;
     white-space: nowrap; }
     .photo-stories .container .section-card {
-      width: 100%;
+      width: 80%;
+      overflow: hidden;
+      white-space: normal;
+      text-align: justify;
       /*max-width: 320px;*/
-      max-height: 60vh;
+      max-height: 110vh;
       display: inline-block;
       vertical-align: top;
       *display: inline;
@@ -601,7 +634,10 @@ ul#horizontal-list li {
       /* For IE7*/ }
       .photo-stories .container .section-card p {
         white-space: normal;
-        width: 100%; } }
+        width: 100%; }
+    .photo-stories .container div:nth-child(4) {
+      float: inherit !important;
+      padding-top: 0px !important; } }
 .photo-stories h2 {
   margin-top: 20px;
   margin-bottom: 5px; }
@@ -610,6 +646,9 @@ ul#horizontal-list li {
   .photo-stories .container .row .section-card {
     margin-top: 20px;
     margin-bottom: 5px; }
+.photo-stories div:nth-child(4) {
+  float: right;
+  padding-top: 32px; }
 
 /* Contact Section */
 .contact {
