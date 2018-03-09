@@ -481,7 +481,7 @@ ul#horizontal-list li {
       text-align: justify; }
     .stories .container .section-card {
       max-width: 85%;
-      max-height: 60vh;
+      max-height: 80vh;
       display: inline-block;
       *display: inline;
       /* For IE7*/
