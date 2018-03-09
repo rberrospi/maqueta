@@ -63,6 +63,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    .single-welcome-left {
+        p {
+        width: 100%;
+        }
+    }
+ 
+}
+
 
 /* Story section */
 
@@ -70,6 +79,32 @@
     h2 {
         margin-top: 20px;
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .stories {
+        .container {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            p {
+                width:100%;
+            }
+            .section-card {
+                max-width: 85%;
+                max-height: 60vh; 
+                display:inline-block;
+                *display:inline;/* For IE7*/
+                *zoom:1;/* For IE7*/ 
+                .content-card { 
+                    p {
+                        white-space: normal;
+                    }
+                } 
+            }
+        }
     }
 }
 
@@ -199,12 +234,6 @@
             }
         }
     }
-
-    .nc {
-        display:none!important;
-    }
-
-
 }
 
 /* Sponsor Section */

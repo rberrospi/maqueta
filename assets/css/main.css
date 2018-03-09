@@ -461,11 +461,31 @@ ul#horizontal-list li {
   .single-welcome-left p {
     width: 80%; }
 
+@media (max-width: 767px) {
+  .single-welcome-left p {
+    width: 100%; } }
 /* Story section */
 .stories h2 {
   margin-top: 20px;
   margin-bottom: 5px; }
 
+@media (max-width: 767px) {
+  .stories .container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; }
+    .stories .container p {
+      width: 100%; }
+    .stories .container .section-card {
+      max-width: 85%;
+      max-height: 60vh;
+      display: inline-block;
+      *display: inline;
+      /* For IE7*/
+      *zoom: 1;
+      /* For IE7*/ }
+      .stories .container .section-card .content-card p {
+        white-space: normal; } }
 /* Events section */
 .events img {
   max-height: 384px; }
@@ -545,10 +565,7 @@ ul#horizontal-list li {
       *zoom: 1;
       /* For IE7*/ }
       .training .container .section-card .content-card p {
-        white-space: normal; }
-
-  .nc {
-    display: none !important; } }
+        white-space: normal; } }
 /* Sponsor Section */
 @media (max-width: 767px) {
   .sponsor .container {
